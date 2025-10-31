@@ -20,31 +20,31 @@ Originally developed for machine learning projects with structured data, this pi
 ## 🧩 Key Steps in the Pipeline
 1. Data Cleaning
 
-1.1️⃣ Detects missing values and visualizes missing ratios.
-1.2️⃣ Automatically fills numeric columns (median/mean) and categorical columns (mode/missing).
-1.3️⃣ Removes duplicate rows safely.
+1.1️ Detects missing values and visualizes missing ratios.
+1.2️ Automatically fills numeric columns (median/mean) and categorical columns (mode/missing).
+1.3️ Removes duplicate rows safely.
 
 2. Feature Redundancy Reduction
 
-2.1️⃣ Calculates pairwise correlations and removes highly correlated features (default threshold = 0.95).
-2.2️⃣ Calculates Variance Inflation Factors (VIF) to detect multicollinearity and iteratively drops redundant features.
+2.1️ Calculates pairwise correlations and removes highly correlated features (default threshold = 0.95).
+2.2️ Calculates Variance Inflation Factors (VIF) to detect multicollinearity and iteratively drops redundant features.
 
 3. Train/Test Split Optimization
 
-3.1️⃣ Uses Optuna to tune the best test split ratio (between 0.1 and 0.4).
-3.2️⃣ Evaluates performance with cross-validated F1-score using a RandomForest baseline.
-3.3️⃣ Returns the optimal ratio and performance metrics.
+3.1️ Uses Optuna to tune the best test split ratio (between 0.1 and 0.4).
+3.2️ Evaluates performance with cross-validated F1-score using a RandomForest baseline.
+3.3️ Returns the optimal ratio and performance metrics.
 
 4. Visualization
 
-4.1️⃣ Automatically generates:
+4.1️ Automatically generates:
 
 Correlation heatmaps
 
 Feature distributions
 
 Target variable distribution
-4.2️⃣ All plots are saved under the plots/ directory.
+4.2️ All plots are saved under the plots/ directory.
 
 ⚙️ Technologies and Libraries
 
