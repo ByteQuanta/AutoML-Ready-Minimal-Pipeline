@@ -1,5 +1,5 @@
 # 🤖 AutoML Ready Minimal Pipeline
-📘 Project Overview
+## 📘 Project Overview
 
 This project introduces a lightweight, AutoML-ready preprocessing pipeline designed for automated data cleaning, feature selection, and train/test optimization — without relying on external heavy frameworks.
 
@@ -17,7 +17,7 @@ And produce essential visual diagnostics.
 
 Originally developed for machine learning projects with structured data, this pipeline can be integrated easily into any AutoML workflow or used as a standalone preprocessing step.
 
-🧩 Key Steps in the Pipeline
+## 🧩 Key Steps in the Pipeline
 1. Data Cleaning
 
 1.1️⃣ Detects missing values and visualizes missing ratios.
