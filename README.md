@@ -18,24 +18,24 @@ And produce essential visual diagnostics.
 Originally developed for machine learning projects with structured data, this pipeline can be integrated easily into any AutoML workflow or used as a standalone preprocessing step.
 
 ## 🧩 Key Steps in the Pipeline
-1. Data Cleaning
+# 1. Data Cleaning
 
 1.1️ Detects missing values and visualizes missing ratios.
 1.2️ Automatically fills numeric columns (median/mean) and categorical columns (mode/missing).
 1.3️ Removes duplicate rows safely.
 
-2. Feature Redundancy Reduction
+# 2. Feature Redundancy Reduction
 
 2.1️ Calculates pairwise correlations and removes highly correlated features (default threshold = 0.95).
 2.2️ Calculates Variance Inflation Factors (VIF) to detect multicollinearity and iteratively drops redundant features.
 
-3. Train/Test Split Optimization
+# 3. Train/Test Split Optimization
 
 3.1️ Uses Optuna to tune the best test split ratio (between 0.1 and 0.4).
 3.2️ Evaluates performance with cross-validated F1-score using a RandomForest baseline.
 3.3️ Returns the optimal ratio and performance metrics.
 
-4. Visualization
+# 4. Visualization
 
 4.1️ Automatically generates:
 
@@ -44,9 +44,10 @@ Correlation heatmaps
 Feature distributions
 
 Target variable distribution
+
 4.2️ All plots are saved under the plots/ directory.
 
-⚙️ Technologies and Libraries
+# ⚙️ Technologies and Libraries
 
 Python 3.9+
 
@@ -56,7 +57,7 @@ Matplotlib, Seaborn – visualization and diagnostics
 
 Scikit-learn – preprocessing, scaling, and base modeling
 
-🧠 Core Functions
+# 🧠 Core Functions
 | Function                                     | Purpose                                                 |
 | -------------------------------------------- | ------------------------------------------------------- |
 | `missing_value_analysis()`                   | Detects and summarizes missing values                   |
